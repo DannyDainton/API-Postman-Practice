@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Json Server",
+		"_postman_id": "d07159e3-e55e-9af4-f2b4-de51fd4ad924",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Users",
+			"request": {
+				"url": "localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create a New User",
+			"request": {
+				"url": "localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\":99,\r\n \"first_name\":\"Joe\",\r\n \"last_name\":\"User\",\r\n \"email\":\"JoeUser@gmail.com\",\r\n \"gender\":\"Male\",\r\n \"ip_address\":\"999.999.999.999\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET A Single User by ID",
+			"request": {
+				"url": "localhost:3000/users/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update a Single User",
+			"request": {
+				"url": "localhost:3000/users/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\":3,\r\n \"first_name\":\"Tracey\",\r\n \"last_name\":\"User\",\r\n \"email\":\"TraceyUser@skype.com\",\r\n \"gender\":\"Female\",\r\n \"ip_address\":\"999.999.999.999\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Everything in the DataBase",
+			"request": {
+				"url": "localhost:3000/db",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE A single user",
+			"request": {
+				"url": "localhost:3000/users/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
